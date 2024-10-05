@@ -6,8 +6,8 @@ import streamlit as st
 from babel.numbers import format_currency
 sns.set(style='dark')
 
-dataset = pd.read_csv('all_data.csv')
-order_data = pd.read_csv('all_data_2.csv')
+dataset = pd.read_csv('dashboard/all_data.csv')
+order_data = pd.read_csv('dashboard/all_data_2.csv')
 
 def revenueGroupByCategory(sort):
     dataframe = dataset.groupby('product_category_name_english').agg({
